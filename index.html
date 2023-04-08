@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+        <nav> 
+          
+            
+            <ul>
+                <li><a href="#header"> Home</a></li>
+                <li><a href="#about"> About</a></li>
+                <li><a href="vidushi resume 2.pdf"> Download CV</a></li>
+                <li><a href="Code10.html"> Contact</a></li>
+               
+
+
+            </ul>
+        </nav>
+
+        <div class="header-text">
+          <img src="IMG_20230404_163602_776.jpg" alt="" class="logo">
+
+          
+          <p> Web Developer  </p>
+          <h1> Hi, I am <span>Vidushi  </span><br>  Singhal </h1>
+        </div>
+    </div>
+
+  </div>  
+  
+
+
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="" alt="">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title"> About me</h1>
+          <p> I am a Web developer currently working on frontend. My hobbies are blogging.reading,problem solving.Well, I am a quick learner and I have the interest to learn new things at the day to day life.My goal is to get a job in a reputed company and achieve a good position where I can build my career and help the organization too.
+          </p>
+         <div class="tab-titles">
+          <p class="tab-links  active-link" onclick="opentab('Skills')"> Skills</p>
+          <p class="tab-links " onclick="opentab('Experience')"> Experience</p>
+          <p class="tab-links " onclick="opentab('Education')">Education</p>
+          <div class="tab-content active-tab" id="Skills">
+            <ul>   
+          <li> <span> UI?UX</span><br> Desiggning WEb/App interfaces</li>
+          <li> <span> Web development </span><br> HTML,CSS,Javascript</li>
+          <li> <span> C++</span><br> OOPS,Data structure</li>
+
+        </ul>
+          </div>
+          <div class="tab-content" id="Experience">
+            <ul>   
+          <li> <span> 2023 current </span><br> Working with Megaprojects </li>
+          <li> <span> 2022 </span><br> Desiggning WEb/App interfaces</li>
+
+        </ul>
+          </div>
+          <div class="tab-content" id="Education">
+            <ul>   
+          <li> <span> 2021-2025</span><br> BTECH in Computer Science and Enginerring</li>
+          <li> <span> 2020-2021 </span><br> 12th  CBSE </li>
+          <li> <span> 2018-2019</span><br> 10th CBSE</li>
+
+        </ul>
+          </div>
+
+         </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-content");
+    function opentab(tabname){
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents){
+        tablink.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+</body>
+</html>
